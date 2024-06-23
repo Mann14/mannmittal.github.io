@@ -1,0 +1,462 @@
+body{
+    margin: 0px 0px;
+    padding: 0;
+}
+.dropdown-list{
+    position:fixed;
+    background-color: rgba(255, 255, 255, 0.922);
+    width: 98.8vw;
+    top: 0px;
+    z-index: 10;
+}
+.dropdown-list ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2%;
+    position: relative;
+    right: 6%;
+}
+.dropdown-list ul li{
+    list-style: none;
+    padding: 10px 0;
+}
+.dropdown-list ul li a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 500;
+    font-family: "Josefin Sans",sans-serif;
+}
+.main{
+    background-image: url(images/portfolio_bg.6dc09719.jpeg);
+    height: 120vh;
+}
+.main2{
+    background-color: rgba(122, 122, 122, 0.756);
+    height: 40%;
+    width: 100%;
+}
+.head{
+    position: absolute;
+    right: 20%;
+    top: 15%;
+}
+.head h3{
+    font-family:"Josefin Sans",sans-serif ;
+    font-size: 30px;
+}
+#img1 img{
+    border-radius: 50%;
+    height: 18rem;
+    width: 18rem;
+    position: absolute;
+    bottom: 27%;
+    left: 15%;
+    border: 4px solid white;
+}
+.name h1{
+    color: white;
+    position: absolute;
+    font-size: 6rem;
+    top: 70%;
+    left: 20%;
+    font-family:"Josefin Sans",sans-serif;
+}
+.name h1:hover{
+    color: orange;
+}
+@media screen and (max-width:600px) {
+    .main{
+        height: 140vh;
+    }
+    .head{
+        right: 35%;
+        top:75%;
+    }
+    .head h3{
+        font-size: 1.5rem;
+        color: white;
+    }
+    .name h1{
+        font-size: 4rem;
+        top:100%
+    }
+}
+/* About */
+#about{
+    height:35vh;
+    background-color:rgba(113, 112, 112, 0.331);
+}
+span h3{
+    margin: 1px;
+    width: 140px;
+    color:black;
+    font-size: x-large;
+    font-family:"Josefin Sans",sans-serif;
+    border: 5px solid black;
+    padding:10px;
+    text-align: center;
+}
+.container span{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    position: relative;
+    top:50px;
+}
+.para{
+    width: 70vw;
+    margin: auto;
+    padding: 10px 0;
+    font-size: large;
+    font-family:"Josefin Sans",sans-serif;
+}
+@media screen and (max-width:600px) {
+    #about{
+        height: 45vh;
+    }
+    
+}
+/* Skills */
+#skills{
+    height:60vh;
+    background-color:rgba(113, 112, 112, 0.331);
+}
+.skills_set{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 0;
+    row-gap: 15px;
+    font-size: 24px;
+    font-family:"Josefin Sans",sans-serif;
+}
+.skills_sets{
+    display: flex;
+    gap: 30px;
+}
+.skills_sets span{
+    font-size: 20px;
+}
+.space
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    display: flex;
+}
+  
+.rating span {
+    cursor: pointer;
+    font-size: 24px;
+}
+.fa-red{
+    color:goldenrod;
+}
+@media screen and (max-width:600px) {
+    .rating span{
+        font-size: 12px;
+    }
+    .skills_sets span{
+        font-size: 15px;
+    }
+}
+/* Resume */
+#Resume{
+    height: 190vh;
+    background-image: url(images/resume_bg.7fc9b438.jpg);
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    padding:0 10%;
+}
+#Resume .heading span h3{
+    color: white;
+    border: 1px solid white;
+}
+.education{
+    color: white;
+    font-size: xx-large;
+    height: 70vh;
+}
+.edu{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 60vh;
+    position: relative;
+    bottom: 84%;
+    gap: 10px;
+}
+.red{
+    background-color:rgba(195, 192, 192, 0.849);
+    padding-left: 10px;
+}
+.timeline-line{
+    position: relative;
+    height: 58vh;
+    width: 0px;
+    border:2px solid white;
+    right: 3%;
+}
+.red::before{
+    content: '';
+    position: absolute;
+    right: 102%;
+    top: 5%;
+    border-radius: 50%;
+    width: 0.7rem;
+    height: 0.7rem;
+    border: 2px solid white;
+}
+.green::before{
+    top: 55%;
+}
+.red h4{
+    color: black;
+    font-size: 20px;
+}
+.heading2{
+    font-size: 16px;
+}
+.heading3{
+    font-size: 18px;
+}
+.download{
+    position: relative;
+    top: 30%;
+    height: 2em;
+    width: 11em;
+    padding: 10px 30px 10px 30px;
+    background-color:rgba(218, 217, 217, 0.849); 
+    border-radius: 20px;
+}
+.download a{
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+}
+.download:hover{
+    background-color: black;
+}
+@media screen and (max-width:600px){
+    .education{
+        height: 75vh;
+        position: relative;
+        top: 5%;
+    }
+    .edu{
+        height: 55vh;
+        position: relative;
+        bottom:74%;
+    }
+    .timeline-line{
+        position: relative;
+        height: 55vh;
+    }
+    .red h4{
+        color: black;
+        font-size: 15px;
+    }
+    .heading2{
+        font-size: 12px;
+    }
+    .heading3{
+        font-size: 12px;
+    }
+    .red::before{
+        right: 100.8%;
+    }
+    .green::before{
+        top: 60%;
+    }
+}
+/* Project */
+#project{
+    height: 120vh;
+    background-color:rgba(113, 112, 112, 0.331);
+}
+.project1{
+    margin-top: 8%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10%;
+    padding: 0 10%;
+}
+.blue{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+}
+.video img{
+    height: 40vh;
+    width: 35vw;
+    border-radius: 10px;
+}
+.video:hover{
+    transform: scale(1.3);
+}
+.desc{
+    display: grid;
+    grid-template-rows: 0.3fr 1fr;
+}
+.desc1{
+    background-color: black;
+    height: 12vh;
+    color: white;
+    padding:2px 10px;
+    font-size: large;
+    border-radius:0 5.8% 0 0;
+    font-family:"Josefin Sans",sans-serif;
+}
+.desc2{
+    font-family:"Josefin Sans",sans-serif;
+    padding: 5%;
+}
+@media screen and (max-width:600px) {
+    .project1{
+        margin-top: 20%;
+        padding: 0 5%;
+    }
+    .desc{
+        width: 52.1vw;
+    }
+    .desc1{
+        height: inherit;
+        border-radius:0 5.8% 0 0;
+        font-size: medium;
+    }
+    .first_p{
+        font-size: medium;
+    }
+    .desc2{
+        font-size: 15px;
+    }
+    .desc3{
+        font-size: 10px;
+    }
+}
+/* Contact */
+#Contact{
+    height: 53vh;
+    background-color: black;
+    padding: 5% 9%;
+}
+#contact>h1{
+    color: white;
+}
+.contact-display{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.item{
+    height: 43vh;
+    width: 35vw;
+}
+.item form input{
+    border: 0px;
+    border-bottom: 2px solid white;
+    width: 100%;
+    margin: 6%;
+    background-color: inherit;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+
+.button{
+    height: 2.5em;
+    font-size: 1em;
+    background-color:inherit;
+    color: white;
+    border: 2px solid white;
+    margin-left:35% ;
+    cursor: pointer;
+}
+.button:hover{
+    box-shadow: 0px 0px 2px 2px white;
+    cursor: pointer;
+}
+.contact-list li{
+    padding: 3%;
+}
+.contact-list li span i{
+    padding-right: 1%;
+}
+.contact-detail{
+    font-size:0.75rem;
+}
+.item h1{
+    font-size: 24px;
+}
+.item p{
+    font-size: 18px;
+}
+.contact-list li span
+{
+    font-size: 16px;
+}
+.horizontal-list {
+    list-style: none;
+}
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-size: 1.5em;
+}
+.horizontal-list li a{
+    color: white;
+    text-decoration: none;
+}
+.horizontal-list li a i{
+    color: white;
+}
+.social-list {
+    margin-top: -1rem;
+    margin-left: -4%;
+    position: relative;
+    top: 90px;
+    left:85%;
+}
+.social-list li a i{
+    padding: 0px 10px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    color:lightgray;
+}
+@media screen and (max-width:600px)
+{
+    #Contact{
+        height: 55vh;
+    }
+    .contact-display{
+        margin:0 10% 0 0;
+    }
+    .item form input{
+        width: 90%;
+        margin: 16%;
+    }
+    .button{
+        height: 3em;
+        font-size: 13px;
+        padding: 10px;
+    }
+    .contact-detail{
+        padding:10% 24%;
+    }
+    .item h1{
+        font-size: 16px;
+    }
+    .item p{
+        font-size: 14px;
+    }
+    .contact-list li span
+    {
+        font-size: 10px;
+    }
+    .social-list {
+        top: 40px;
+    }
+}
